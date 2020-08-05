@@ -51,13 +51,25 @@ function setup() { //set up code for our drawing
 }
 
 function draw() { //drawing code block
-    //set fill colour to blue
+    //set background colour
+    background(200, 200, 255); //background(r,g,b)
+
+    //set circle fill colour to blue
     fill(0, 180, 180); //fill(R,G,B)
+
     //set stroke properties to blue
     stroke(0, 0, 255); //stroke(H,S,B)
     strokeWeight(10); //stroke pixel weight
+
     //draw a circle
     ellipse(100, 100, 100, 100); //circle(x,y,w,h)
+
+    //set triangle fill colour to red
+    fill(255, 0, 0); //fill(R,G,B)
+
+    //set stroke properties for triangle
+    noStroke();
+
     //draw a triangle
     triangle(200, 150, 250, 25, 310, 150); //triangle parameters (x1,y1,x2,y2,x3,y3)
 
